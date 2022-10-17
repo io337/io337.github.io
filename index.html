@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+<style>
+
+
+.boxWrapper{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    z-index: 10;
+}
+
+.planet{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #3F4857;
+    box-shadow: 0 0 3px 1px #3F4857;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moon{
+    width: 10px;
+    height: 10px;
+    border-radius: 20px;
+    background-color: #8C7A6D;
+    box-shadow: 0 0 3px 1px #8C7A6D;
+    animation: rotationMoon 3s ease-in-out infinite;
+}
+
+@keyframes rotationMoon{
+  from{
+    z-index: initial;
+    margin-right: -100px;
+  }
+  25%{
+    width: 25px;
+    height: 25px;
+  }
+  50%{
+    margin-left: -200px;
+  }
+  75%{
+    width: 7px;
+    height: 7px;
+  }
+  to{
+    z-index: -1;
+    margin-right: -100px;
+  }
+}
+
+
+/* Facultative - Center the object */
+html{height: 100%;}
+body{
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: beige;
+}
+</style>
+</head>
+
+<body>
+
+    <main>
+        <div class="boxWrapper">
+            <div class="planet">
+                <div class="moon"></div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
