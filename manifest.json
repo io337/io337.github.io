@@ -1,16 +1,20 @@
 {
-  "background_color": "#ffffff",
-  "description": "io1337",
-  "dir": "ltr",
-  "display": "standalone",
-  "name": "io337.github",
-  "orientation": "any",
-  "scope": "/",
-  "short_name": "io337.github",
-  "start_url": "/",
-  "theme_color": "#e01cdb",
-  "categories": [],
-  "screenshots": [],
-  "icons": [],
-  "shortcuts": []
-}
+    "short_name": "PWA1",
+    "name": "My PWA 1st Prototype",
+    "icons": [
+      {
+        "src": "icons-192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "icons-512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "/index.html",
+    "background_color": "#000000",
+    "display": "standalone",
+    "theme_color": "#ff0000"
+  }
